@@ -6,6 +6,7 @@ body{
     flex-direction: column;
     font-family: 'Trebuchet MS', sans-serif;
     margin-left: 35%;
+    overflow: hidden;
 }
 button {
     background-color: #810038; 
@@ -41,3 +42,19 @@ button:hover{
     opacity: 80%;
     cursor: pointer;
 }
+/* for mobiles */
+@media screen and (max-width: 800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        float: left;
+        position: fixed;
+        background-color: #fdcd3b;
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+    }
+    
+  }
